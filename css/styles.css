@@ -1,0 +1,498 @@
+@import "./normalize.css";
+
+:root {
+    /* Global */
+    --primary-color: #0011FF;
+    --secondary-color: #EA2300;
+    --accent-color: #B355FF;
+    /* Buttons */
+    --button-hover-color: #910BFF;
+    --button-hover-transition: 1s;
+    /* Navigation Bar */
+    --navbar-text-color: #FFF;
+    --navbar-text-hover-color: #A5A5A5;
+    --navbar-height: 10rem;
+    --navbar-text-hover-transition: 0.5s;
+    /* Hero Section */
+    --hero-text-color: #FFF;
+    /* Market Section */
+    --market-text-color: #FFF;
+    --market-item-border-color: #FFF;
+    --market-item-hover-color: rgba(255, 255, 255, 0.4);
+    --market-item-hover-transition: 0.5s;
+    /* Contact Us Section */
+    --contactus-text-color: #FFF;
+}
+
+html {
+    font-size: 62.5%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+body {
+    font-family: "Russo One", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Custom Fonts */
+@font-face {
+    font-family: "Distant Galaxy";
+    src: url("/fonts/DistantGalaxy.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: var(--primary-color);
+    background: -webkit-linear-gradient(right, var(--primary-color), var(--secondary-color));
+    background: -moz-linear-gradient(right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--navbar-text-color);
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+    position: relative;
+}
+
+.navbar button {
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    color: var(--navbar-text-hover-color);
+    transition: color var(--navbar-text-hover-transition);
+}
+
+.navbar-logo {
+    margin: auto 3vw;
+}
+
+.navbar-logo img {
+    width: 5vw;
+}
+
+.navbar-item {
+    color: inherit;
+    font-size: 3rem;
+    margin: 4rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url(/images/background.png);
+    color: var(--hero-text-color);
+    min-height: calc(100vh - var(--navbar-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-header {
+    font-family: "Distant Galaxy", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 13rem;
+    display: block;
+}
+
+.hero-subheader {
+    font-family: "Distant Galaxy", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 4rem;
+    display: block;
+}
+
+.rewards-button {
+    color: inherit;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 4rem;
+    border-radius: 5rem;
+    background-color: var(--accent-color);
+    padding: 3rem 5rem;
+    border: none;
+    box-shadow: 5px 5px 20px black;
+}
+
+.rewards-button:hover {
+    background-color: var(--button-hover-color);
+    transition: background-color var(--button-hover-transition);
+}
+
+/* How It Works Section */
+.works-section {
+    background-image: url(/images/background.png);
+    color: var(--hero-text-color);
+    min-height: calc(100vh - var(--navbar-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+.works-header {
+    font-size: 7rem;
+    display: inline-block;
+}
+
+.works-body {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 14rem;
+}
+
+.works-image {
+    width: max-content;
+}
+
+/* Projects Section */
+.forms-section {
+    background-image: url(/images/background.png);
+    color: var(--market-text-color);
+    min-height: calc(100vh - var(--navbar-height));
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.file-upload {
+    font-size: 3rem;
+}
+
+/* Battle Pass Section */
+.battle-pass-section {
+    background-image: url(/images/background.png);
+    color: var(--market-text-color);
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Market Section */
+.market-section {
+    background-image: url(/images/background.png);
+    color: var(--market-text-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.market-header {
+    position: absolute;
+}
+
+.market-header h1 {
+    margin: 2.5rem;
+    font-size: 10rem;
+}
+
+.market-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 14rem 0;
+}
+
+.market-item {
+    cursor: pointer;
+    display: flex;
+    height: min-content;
+    min-height: 41.5vh;
+    width: 25vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 3rem;
+    border: 3px solid var(--market-item-border-color);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.market-item img {
+    max-width: 100%;
+}
+
+.market-item:hover {
+    background-color: var(--market-item-hover-color);
+    border-color: var(--market-item-hover-color);
+    transition: background-color var(--market-item-hover-transition);
+    transition: border-color 0.5s;
+}
+
+.market-item-info h2 {
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.market-item-info p {
+    margin: 1rem 0;
+    font-size: 2.2rem;
+    color: var(--market-text-color);
+}
+
+/* Contact Us Section */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px 60px;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #fff;
+}
+
+.social-media-list li {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+    color: #000;
+}
+
+.copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, .6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .direct-contact-container,
+    .form-horizontal {
+        margin: 0 auto;
+    }
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 300px;
+    }
+
+    .social-media-list li {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+
+    .social-media-list li:after {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+
+    .direct-contact-container,
+    .form-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .form-control,
+    textarea {
+
+        margin: 0 auto;
+    }
+
+
+    .name,
+    .email,
+    textarea {
+        width: 280px;
+    }
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 280px;
+    }
+
+    .social-media-list {
+        left: 0;
+    }
+
+    .social-media-list li {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+
+    .social-media-list li:after {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    .send-button {
+        width: 99%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-content li {
+    margin: 0 10px;
+}
+
+.footer-content li a {
+    color: #fff;
+    text-decoration: none;
+}

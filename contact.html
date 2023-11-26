@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>EDX Rewards | A School Incentive Program</title>
+    <link rel="icon" href="/images/icon.png">
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="navbar-logo" href="index.html"><img src="images/logo-text.png" alt="" /></a>
+        <button class="navbar-item" onclick="window.location.href='index.html'">Home</button>
+        <button class="navbar-item" onclick="window.location.href='projects.html'">Projects</button>
+        <button class="navbar-item" onclick="window.location.href='market.html'">Market</button>
+        <button class="navbar-item" onclick="window.location.href='contact.html'">Contact Us</button>
+        <p class="navbar-item" id="points">Points: 0</p>
+    </div>
+    <section class="forms-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 EDX Rewards</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
