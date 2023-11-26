@@ -39,7 +39,7 @@ body {
 /* Custom Fonts */
 @font-face {
     font-family: "Distant Galaxy";
-    src: url("/fonts/DistantGalaxy.ttf") format("truetype");
+    src: url("https://github.com/Vevaan-Verma/EDX-Rewards/raw/main/fonts/DistantGalaxy.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
