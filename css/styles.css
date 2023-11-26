@@ -86,7 +86,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-image: url(/images/background.png);
+    background-image: url("https://vevaan-verma.github.io/images/background.png");
     color: var(--hero-text-color);
     min-height: calc(100vh - var(--navbar-height));
     display: flex;
@@ -134,7 +134,7 @@ body {
 
 /* How It Works Section */
 .works-section {
-    background-image: url(/images/background.png);
+    background-image: url("https://vevaan-verma.github.io/images/background.png");
     color: var(--hero-text-color);
     min-height: calc(100vh - var(--navbar-height));
     display: flex;
@@ -163,7 +163,7 @@ body {
 
 /* Projects Section */
 .forms-section {
-    background-image: url(/images/background.png);
+    background-image: url("https://vevaan-verma.github.io/images/background.png");
     color: var(--market-text-color);
     min-height: calc(100vh - var(--navbar-height));
     display: flex;
@@ -180,7 +180,7 @@ body {
 
 /* Battle Pass Section */
 .battle-pass-section {
-    background-image: url(/images/background.png);
+    background-image: url("https://vevaan-verma.github.io/images/background.png");
     color: var(--market-text-color);
     display: flex;
     justify-content: center;
@@ -191,7 +191,7 @@ body {
 
 /* Market Section */
 .market-section {
-    background-image: url(/images/background.png);
+    background-image: url("https://vevaan-verma.github.io/images/background.png");
     color: var(--market-text-color);
     display: flex;
     justify-content: center;
